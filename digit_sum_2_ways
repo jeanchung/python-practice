@@ -1,0 +1,15 @@
+def digit_sum_1(n):
+    digits = []
+    for i in str(n):
+        digits.append(i)
+    for i in range(len(digits)):
+        digits[i] = int(digits[i])
+    return sum(digits)
+    
+def digit_sum_2(n):
+    digits = []
+    while n > 0:
+        digits.append(n % 10)
+        n = n//10
+    return sum(digits)
+    
